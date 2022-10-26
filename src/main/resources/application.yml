@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: hello-world,sender
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: joseph
+    password: zhoujiazheng123
+    virtualHost: /test
+
+logging:
+  level:
+    org: ERROR
+
+tutorial:
+  client:
+    duration: 10000
