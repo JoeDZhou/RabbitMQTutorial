@@ -1,11 +1,11 @@
-package com.z.helloworld;
+package com.z.worker;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import javax.annotation.Resource;
 
-public class HelloWorldSender {
+public class WorkerSender {
     @Resource
     private RabbitTemplate rabbitTemplate;
     @Resource
@@ -13,8 +13,8 @@ public class HelloWorldSender {
 
     @Scheduled(fixedDelay = 1000, initialDelay = 500)
     public void send() {
-        String message = "Hello world!";
+        String message = "Hello worker!";
         rabbitTemplate.convertAndSend(queue.getName(), message);
-        System.out.println("[X] Sent: "  + message);
+        System.out.println("[X] Sent: " + message);
     }
 }

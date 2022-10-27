@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: hello-world,sender
+    active: worker,receiver
   rabbitmq:
     host: localhost
     port: 5672
