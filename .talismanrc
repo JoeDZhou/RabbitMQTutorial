@@ -1,4 +1,6 @@
 fileignoreconfig:
+- filename: src/main/java/com/z/routing/RoutingSender.java
+  checksum: b9f8eb65e200057736ef1773b6cd3afcdcfd73dd3bdc40f4654b1e6b20b891eb
 - filename: src/main/resources/application.yml
   checksum: 3734e7bfc8d24d008714d2474b1070dcb182baef680b7e472988732032972b68
 - filename: target/classes/application.yml
