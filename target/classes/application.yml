@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: routing,receiver
+    active: topic,receiver
   rabbitmq:
     host: localhost
     port: 5672
